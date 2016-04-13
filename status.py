@@ -1,12 +1,19 @@
+#!/usr/bin/python/
 import cgi
+import cgitb
 import sys
+cgitb.enable()
+print("Content-Type: text/html\n\n")
+print("<html><body>")
 form = cgi.FieldStorage()
-if form.has_key("status")
-	status = form['status']
-	target = open(status.txt, 'w')
-	target.write(username, status, "\n")
-	target.close()
-else
-	print("Content-Type: text/html")
-	print("No status entered!")
-	return
+cgi.print_form(form)
+if "status" not in form:
+	print("<h1>Error</h1>")
+	print("<p>Please enter a status.</p></body></html>")
+else:
+	print(form['status'])
+	#status = form['status']
+	#f = open(status.txt, 'w')
+	#f.write(username, ' ', status, "\n")
+	#f.close()
+
