@@ -1,4 +1,4 @@
-#!/usr/bin/python/
+#!/usr/bin/python
 import cgi
 import cgitb
 import sys
@@ -11,9 +11,9 @@ if "status" not in form:
 	print("<h1>Error</h1>")
 	print("<p>Please enter a status.</p></body></html>")
 else:
-	print(form['status'])
-	#status = form['status']
-	#f = open(status.txt, 'w')
-	#f.write(username, ' ', status, "\n")
-	#f.close()
+	print(form['status'].value)
+	status = form['status'].value
+	f = open('status.txt', 'a')
+	f.write(str(form['username'].value) + ' ' + status + '\n')
+	f.close()
 

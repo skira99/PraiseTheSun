@@ -15,7 +15,7 @@ strings = list(newsfeed)
 strings.reverse()
 strings = strings[0:20]
 for string in strings:
-	print(string)
+	print(string + '</br>')
 newsfeed.close()
 print("</body></html>")
 
