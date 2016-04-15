@@ -64,6 +64,7 @@ int main(int argc, char* argv){
 		return 0;
 	}
 	
+	else{	
 	fgets(line, 299, pntr);
 	line[strcspn(line, "\n")] = '\0';
 	while( !( strcmp(line,user) == 0 ) && (!feof(pntr)) ){
@@ -128,6 +129,7 @@ int main(int argc, char* argv){
 		}
 
 		fclose(html);
+	}
 	}
 	return 0;
 }

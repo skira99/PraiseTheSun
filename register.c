@@ -105,7 +105,7 @@ int main(int argc, char* argv){
 		printf("error in opening file\n");
 		return 0;
 	}
-	
+else{	
 	fgets(line, 299, pntr);
 	line[strcspn(line, "\n")] = '\0';
 	while( ( strcmp(line,user) != 0 ) && (!feof(pntr)) ){
@@ -136,6 +136,11 @@ int main(int argc, char* argv){
 		fputs("\n", pntr);
 
 		fclose(pntr);
+		
+		pntr = fopen("friends.txt", "a");
+		fputs(user, pntr);
+		fputs("\n", pntr);
+		fclose(pntr);
 
 		FILE *html;
 		html = fopen("successreg.html", "r");
@@ -147,6 +152,7 @@ int main(int argc, char* argv){
 		}
 		fclose(html);
 	}
+}
 	return 0;
 }
 }
