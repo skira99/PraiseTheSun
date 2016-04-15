@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title> </title>
+		<title>Login and Register</title>
 		<style>
 			a:link, a:visited{
 				background-color:blue;
@@ -79,32 +79,32 @@
 		</div>
 
 		<div id="login">
-			<form name="login" action="login.c" method="post">
+			<form name="login" action="login.cgi" method="post">
 				<fieldset>
 					<legend>Login:</legend>
 					<b>Username:</b><br>
 					<input type="text" name="uname"><br><br>
 					<b>Password:</b><br>
-					<input type="text" name="pass"><br><br>
+					<input type="password" name="pass"><br><br>
 					<input type="submit" name"Login" value="Login">	
 				</fieldset>
 			</form>
 		</div>
 		
 		<div id="signup">
-			<form name="register" action="register.c" method="post">
+			<form name="register" action="register.cgi" method="post">
 				<fieldset>
 					<legend>Create an account:</legend>
 					<b>Username:</b><br>
-					<input type="text" name="uname"><br><br>
+					<input name="uname" required><br><br>
 					<b>Full Name:</b><br>
-					<input type="text" name="name"><br><br>
+					<input name="name" required><br><br>
 					<b>Job Description:</b><br>
-					<input type="text" name="job"><br><br>
+					<input name="job" required><br><br>
 					<b>Password:</b><br>
-					<input type="text" name="pass"><br><br>
+					<input type="password" name="pass" required><br><br>
 					<b>Re-enter Password:</b><br>
-					<input type="text" name="pass2"><br><br>
+					<input type="password" name="pass2" required><br><br>
 					<input type="submit" name"Signup" value="Register">
 				</fieldset>
 			</form>

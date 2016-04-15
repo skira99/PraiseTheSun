@@ -44,14 +44,17 @@
 
 	<body>
 		<div id="title">
-			<center><h1>Seems like something went wrong...</h1></center>
+			<center><h1>You have Logged In</h1></center>
 		</div>
 		<div id="text">
-			It seems there was an issue while registering your new account. Either a field was left unfilled, or the username you have chosen has already been taken. Please make sure that all forms are filled, and if this was the case, please try a different username.
+			Yay! You have successfully signed in. Please press the following button to proceed to te dashboard 
 		</div>
 		<div id="buttons">
-			<br><a href="welcome.html"><br>Return to the Welcome page<br><br></a> <br>
-			<br><a href="login.html"><br>Return to the Login page<br><br></a>
+			<form name="proceed" action="dashboard.py" method="post">
+			<b>Proceed</b><br>
+			<input type="hidden" value="10">
+			<input type="submit" name="submit" value="Continue">
+			</form>
 		</div>
 		<div id="footer">
 			Created by Jamie Merrill and Samuel Thibodeau; Team Praise The Sun
