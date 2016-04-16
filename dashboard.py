@@ -14,10 +14,12 @@ def getusername():
 			break
 		else:
 			continue
-	return str(infolist[1])
+	string = str(infolist[1]).strip("+")
+	string = string.strip(" ")
+	return string
 
 def getfriends(user):
-	with open('friends.txt') as fp:
+	with open('/home/2016/sthibo6/public_html/friends.txt') as fp:
     		for line in fp:
         		if line.startswith(user):
 				return line.split(' ')

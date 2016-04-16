@@ -49,7 +49,7 @@ int setfriends(FRIEND friends[], const char *user)  /* returns # of friends, -1 
 	}
 	else
 	{
-		FILE *fp = fopen("friends.txt", "r");
+		FILE *fp = fopen("/home/2016/sthibo6/public_html/friends.txt", "r");
 		int found = 0;
 		char line[1024];
 		fgets(line, 999, fp);
@@ -101,11 +101,14 @@ int main(int argc, char **argv)
 	printheader();
 	for(i = 0; i < numfriends; ++i)
 	{
-		printf("<form name=\"seefriend%d\" action=\"makeprofile.py\" method=\"post\">", i);
+		printf("<form name=\"seefriend%d\" action=\"profile.py\" method=\"post\">", i);
 		printf("<input type=\"hidden\" name=\"currentuser\" value=%s>", user);
-		printf("<input type=\"submit\" name=\"submit\" value=\"%s\"", userfriends[i].name);
+		printf("<input type=\"submit\" name=\"submit\" value=\"%s\">", userfriends[i].name);
 		printf("</form>");
 	}
+	printf("<form name=\"return\" action=\"dashboard.py\" method=\"post\">");
+	printf("<input type=\"hidden\" name=\"currentuser\" value=%s>", user);
+	printf("<input type=\"submit\" name=\"back\" value=\"Return to Dashboard\">");
         printf("</body> </html>");
 	return 0;
 }

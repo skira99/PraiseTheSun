@@ -13,17 +13,17 @@ if "status" not in form:
 	print("<h1>Error</h1>")
 	print("<p>Please enter a status.</p>")
 	print('<form name="input" action="dashboard.py" method="post">')
-	print('<input type="hidden" name ="currentuser"  value="%s">' % (user))
-	print('<input type="submit" name ="submit" value="Return to Dashboard"')
+	print('<input type="hidden" name="currentuser"  value="%s">' % (user))
+	print('<input type="submit" name="submit" value="Return to Dashboard">')
 	print('</form></body></html>')
 else:
-	print("<h3> Status Updated! </h3>")
+        status = form['status'].value
+        f = open('status.txt', 'a')
+        f.write(user + ' ' + status + '\n')
+        f.close()
+	print('<h3> Status Updated! </h3>')
         print('<form name="input" action="dashboard.py" method="post">')
-	print('<input type="hidden" name ="currentuser"  value="%s">' % (user))
-	print('<input type="submit" name ="submit" value="Return to Dashboard"')
+	print('<input type="hidden" name="currentuser"  value="%s">' % (user))
+	print('<input type="submit" name="submit" value="Return to Dashboard">')
 	print('</form></body></html>')
-	status = form['status'].value
-	f = open('status.txt', 'a')
-	f.write(user + ' ' + status + '\n')
-	f.close()
 
