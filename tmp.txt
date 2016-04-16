@@ -1,11 +1,11 @@
-skira99 lautrec gwyn Artorias blah jmerri8  solaire  solaire  queelag  frampt  TestUser  Swaggyboi69 
+skira99 lautrec gwyn Artorias jmerri8  queelag 
 TestUser
 blah
 jmerri8
 solaire
-lautrec
-Artorias 
-queelag
+lautrec skira99 jmerri8 queelag 
+Artorias lautrec skira99 
+queelag lautrec 
 frampt
 Swaggyboi69 queelag frampt
 james 

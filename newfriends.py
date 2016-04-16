@@ -56,7 +56,7 @@ else:
 			tmpfile.write(line)
 	line = line.replace("\n", " ")
 	for friends in friendslist:
-		line= line+friends+ " "
+		line=line+friends+" "
 	line = line + "\n"
 
 	tmpfile.write(line)
@@ -87,15 +87,16 @@ else:
 		line5 = success.readline()
 		if z == 32:
 			for friends in friendslist:
-				print friends+"<br>"
-			print "Return to Dashboard?"
+				print friends, "<br>"
+			
+			print "<br>","Return to Dashboard?"
 			print "<form name=\"return\" action=\"http://cs.mcgill.ca/~jmerri8/dashboard.py\" method=\"post\">"
 			print "<input type=\"hidden\" name=\"currentuser\" value=\"", user, "\">"
 			print "<input type=\"submit\" name=\"submit\" value=\"dashboard\">"
 			print "</form>"
 			z = z+1
 		elif not line5:
-			breaik
+			break
 		else:
 			print line5
 			z = z+1

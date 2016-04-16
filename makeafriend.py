@@ -65,9 +65,6 @@ for elements in alluserslist:
 		print "\t\t\t\t",alluserslist[y], alluserslist[y+2],"<input type=\"checkbox\" name=\"",alluserslist[y],"\">" "<br><br>"
 		y = y+4
 
-print listfriend
-print user
-
 print "\t\t\t\t <input type=\"hidden\" name=\"currentuser\" value=\"", user, "\">"
 print "\t\t\t\t<center> <input type=\"submit\" name=\"Submit\" value=\"Make Friends!\"></center>"
 print "\t\t\t </form>"
