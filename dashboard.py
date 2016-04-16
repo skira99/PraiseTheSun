@@ -44,7 +44,7 @@ def printnewsfeed(user):
 	newsfeed.close()
 
 def printhtml(usr):
-	print('<html><head><title>dashboard</title></head><body><h1> Dashboard </h1>')
+	print('<ihtml><head><title>dashboard</title></head><body>')
 	print('<ul><li><a href="http://cs.mcgill.ca/~sthibo6/welcome.html">logout</a></li></ul></br>')
 	print('<form name="makefriend" action="http://cs.mcgill.ca/~sthibo6/makeafriend.py" method="post">')
 	print('<input type="hidden" name ="currentuser"  value="%s">' % (user))

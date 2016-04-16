@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Artorias my dawg
 Artorias the abyss sucks
 Artorias All trees are blue
@@ -8,7 +7,3 @@ Artorias wat
 Artorias git gud
 lautrec I killed the Firekeeper!!
 skira99 Lautrec I'm gonna destroy you (once I find you)
-=======
-test jj
-test test
->>>>>>> c032c472a7c47e000769dfc34b5305e5a8b64d80

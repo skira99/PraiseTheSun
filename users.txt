@@ -42,3 +42,7 @@ james
 unix
 merrill
 student
+seath
+books
+Seath the Scaleless
+Albino Dragon
